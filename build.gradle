@@ -10,6 +10,7 @@ buildscript {
         retrofit_version = '2.4.0'
         dagger_version='2.16'
         rx_lifecycle_version = '1.0'
+        glide_version="3.7.0"
     }
 
     repositories {
