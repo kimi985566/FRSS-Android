@@ -1,4 +1,4 @@
-package com.ycy.usercenter;
+package com.ycy.user;
 
 import org.junit.Test;
 

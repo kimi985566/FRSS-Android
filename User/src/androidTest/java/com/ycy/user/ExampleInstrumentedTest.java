@@ -1,4 +1,4 @@
-package com.ycy.usercenter;
+package com.ycy.user;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

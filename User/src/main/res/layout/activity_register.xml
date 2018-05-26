@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mRegisterRootView"
+    style="@style/MatchMatch.Vertical.Common">
+
+    <com.ycy.baselibrary.widgets.HeaderBar
+        android:id="@+id/mHeaderBar"
+        style="@style/MatchWrap"
+        android:elevation="@dimen/common_elevation"
+        app:titleText="注册"/>
+
+    <LinearLayout
+        style="@style/MatchWrap.Vertical"
+        android:layout_margin="@dimen/common_margin"
+        android:background="@drawable/border_corner_all">
+
+        <EditText
+            android:id="@+id/mMobileEt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_line_height"
+            android:background="@null"
+            android:drawablePadding="@dimen/common_padding_small"
+            android:drawableStart="@drawable/icon_phone"
+            android:hint="请输入手机号码"
+            android:inputType="phone"
+            android:paddingStart="@dimen/common_padding_small"/>
+
+        <View style="@style/DividerFixedHeight"/>
+
+        <EditText
+            android:id="@+id/mPwdEt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_line_height"
+            android:background="@null"
+            android:drawablePadding="@dimen/common_padding_small"
+            android:drawableStart="@drawable/icon_pwd"
+            android:hint="请输入密码（6-20位字母或数字）"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/common_padding_small"/>
+
+        <View style="@style/DividerFixedHeight"/>
+
+        <EditText
+            android:id="@+id/mPwdConfirmEt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_line_height"
+            android:background="@null"
+            android:drawablePadding="@dimen/common_padding_small"
+            android:drawableStart="@drawable/icon_pwd"
+            android:hint="请再次输入密码"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/common_padding_small"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/mRegisterBtn"
+        style="@style/FullBtnStyle"
+        android:elevation="@dimen/common_elevation"
+        android:text="@string/register"/>
+
+</LinearLayout>
