@@ -49,12 +49,16 @@ class RegisterActivity : BaseMVPActivity<RegisterPresenter>(), RegisterView, Vie
     }
 
     override fun onRegisterResult(result: String) {
-        ColoredSnackbar.confirm(mRegisterRootView, result).show()
+        toast(result)
     }
 
     override fun onClick(v: View) {
         when (v.id) {
             R.id.mRegisterBtn -> {
+                if (mPwdEt.text.toString() != mPwdConfirmEt.text.toString()) {
+                    ColoredSnackbar.alert(mRegisterRootView, "密码不一致").show()
+                    return@onClick
+                }
                 mPresenter.register(mMobileEt.text.toString(), mPwdEt.text.toString())
             }
         }
@@ -78,5 +82,4 @@ class RegisterActivity : BaseMVPActivity<RegisterPresenter>(), RegisterView, Vie
                 mPwdEt.text.isNullOrEmpty().not() &&
                 mPwdConfirmEt.text.isNullOrEmpty().not()
     }
-
 }

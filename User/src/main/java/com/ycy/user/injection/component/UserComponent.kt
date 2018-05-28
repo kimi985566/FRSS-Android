@@ -3,6 +3,7 @@ package com.ycy.user.injection.component
 import com.kotlin.base.injection.PreComponentScope
 import com.kotlin.base.injection.component.ActivityComponent
 import com.ycy.user.injection.module.UserModule
+import com.ycy.user.ui.activity.LoginActivity
 import com.ycy.user.ui.activity.RegisterActivity
 import dagger.Component
 
@@ -27,5 +28,6 @@ import dagger.Component
 interface UserComponent {
 
     fun inject(activity: RegisterActivity)
+    fun inject(activity: LoginActivity)
 
 }

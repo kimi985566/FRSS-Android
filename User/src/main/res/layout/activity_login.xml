@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mLoginRootView"
+    style="@style/MatchMatch.Vertical.Common">
+
+    <com.ycy.baselibrary.widgets.HeaderBar
+        android:id="@+id/mHeaderBar"
+        style="@style/MatchWrap"
+        android:elevation="@dimen/common_elevation"
+        app:rightText="@string/register"
+        app:titleText="@string/login"
+        />
+
+    <LinearLayout
+        style="@style/MatchWrap.Vertical"
+        android:layout_margin="@dimen/common_margin"
+        android:background="@drawable/border_corner_all">
+
+        <EditText
+            android:id="@+id/mMobileEt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_line_height"
+            android:background="@null"
+            android:drawablePadding="@dimen/common_padding_small"
+            android:drawableStart="@drawable/icon_user_name"
+            android:hint="@string/enterMobile"
+            android:inputType="phone"
+            android:paddingStart="@dimen/common_padding_small"/>
+
+        <View style="@style/DividerFixedHeight"/>
+
+        <EditText
+            android:id="@+id/mPwdEt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_line_height"
+            android:background="@null"
+            android:drawablePadding="@dimen/common_padding_small"
+            android:drawableStart="@drawable/icon_pwd"
+            android:hint="@string/enterPwd"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/common_padding_small"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/mLoginBtn"
+        style="@style/FullBtnStyle"
+        android:elevation="@dimen/common_elevation"
+        android:text="@string/login"/>
+
+</LinearLayout>

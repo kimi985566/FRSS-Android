@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_enabled="false" android:drawable="@drawable/btn_common_disable" />
-    <item android:state_pressed="true" android:drawable="@drawable/btn_common_pressed" />
-    <item android:drawable="@drawable/btn_common_nor" />
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/btn_common_disable" android:state_enabled="false"/>
+    <item android:drawable="@drawable/btn_common_pressed" android:state_pressed="true"/>
+    <item android:drawable="@drawable/btn_common_nor"/>
 </selector>

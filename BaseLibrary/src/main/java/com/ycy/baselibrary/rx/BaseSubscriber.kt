@@ -15,7 +15,7 @@ open class BaseSubscriber<T>(private val mBaseView: BaseView) : Subscriber<T>() 
     override fun onError(e: Throwable?) {
         mBaseView.hideLoading()
         if (e is BaseException) {
-            mBaseView.onError(e.msg)
+            mBaseView.onError(e.errorMsg)
         }
     }
 

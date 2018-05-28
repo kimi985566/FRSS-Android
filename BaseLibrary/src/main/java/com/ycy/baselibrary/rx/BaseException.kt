@@ -1,4 +1,4 @@
 package com.ycy.baselibrary.rx
 
-class BaseException(val status: Int, val msg: String) : Throwable() {
+class BaseException(val errorNo: Int, val errorMsg: String) : Throwable() {
 }

@@ -2,7 +2,6 @@ package com.kotlin.base.rx
 
 import com.ycy.baselibrary.common.ResultCode
 import com.ycy.baselibrary.data.protocol.BaseResp
-import com.ycy.baselibrary.data.protocol.BaseRespDataClass
 import com.ycy.baselibrary.rx.BaseException
 import rx.Observable
 import rx.functions.Func1
@@ -12,10 +11,8 @@ import rx.functions.Func1
  */
 class BaseFunc<T> : Func1<BaseResp<T>, Observable<T>> {
     override fun call(t: BaseResp<T>): Observable<T> {
-        //TODO
-        var a = (t.data as BaseRespDataClass)
-        if (a.status != ResultCode.SUCCESS) {
-            return Observable.error(BaseException(a.status, a.message))
+        if (t.errorNo!= ResultCode.SUCCESS) {
+            return Observable.error(BaseException(t.errorNo, t.errorMsg))
         }
 
         return Observable.just(t.data)
