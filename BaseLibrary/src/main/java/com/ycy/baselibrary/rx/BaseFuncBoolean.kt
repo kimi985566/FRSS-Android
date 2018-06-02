@@ -1,8 +1,7 @@
-package com.kotlin.base.rx
+package com.ycy.baselibrary.rx
 
 import com.ycy.baselibrary.common.ResultCode
 import com.ycy.baselibrary.data.protocol.BaseResp
-import com.ycy.baselibrary.rx.BaseException
 import rx.Observable
 import rx.functions.Func1
 

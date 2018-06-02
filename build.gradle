@@ -2,6 +2,7 @@
 
 buildscript {
     ext{
+        android_support_version='27.1.1'
         kotlin_version = '1.2.41'
         anko_version = '0.10.5'
         rx_kotlin_version = '1.0.0'
@@ -11,12 +12,16 @@ buildscript {
         dagger_version='2.16'
         rx_lifecycle_version = '1.0'
         glide_version="3.7.0"
+        circle_imageView_version = "2.2.0"
+        take_photo_version = "4.0.3"
+        alert_view_version = "1.0.3"
+        easy_permission_version = "1.2.0"
     }
 
     repositories {
-        google()
-        mavenCentral()
         jcenter()
+        mavenCentral()
+        google()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.1.2'
@@ -29,9 +34,12 @@ buildscript {
 
 allprojects {
     repositories {
-        google()
-        mavenCentral()
         jcenter()
+        mavenCentral()
+        google()
+        maven{
+            url 'https://dl.bintray.com/getupdown/LinkSegTree'
+        }
     }
 }
 

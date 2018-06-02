@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchMatch">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/mHomeSwipeRefreshLayout"
+        style="@style/MatchMatch">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mHomeRv"
+            style="@style/MatchMatch">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/mHomeFAB"
+        style="@style/WrapWrap"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="@dimen/common_margin"
+        android:elevation="@dimen/common_elevation"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/icon_add"/>
+
+</android.support.design.widget.CoordinatorLayout>

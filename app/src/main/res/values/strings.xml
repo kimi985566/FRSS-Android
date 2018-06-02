@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">FRSS</string>
+    <string name="un_login_text">登录/注册</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_search">Search</string>
+    <string name="action_style">style</string>
+    <string name="homePage">首页</string>
 </resources>

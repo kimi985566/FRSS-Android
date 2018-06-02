@@ -5,7 +5,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
 import com.kotlin.base.rx.BaseFunc
-import com.kotlin.base.rx.BaseFuncBoolean
+import com.ycy.baselibrary.rx.BaseFuncBoolean
 import com.kotlin.base.utils.GlideUtils
 import com.trello.rxlifecycle.LifecycleProvider
 import com.ycy.baselibrary.data.protocol.BaseResp

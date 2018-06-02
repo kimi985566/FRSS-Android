@@ -8,7 +8,7 @@ import com.kotlin.base.injection.module.LifecycleProviderModule
 import com.ycy.baselibrary.common.BaseApplication
 import com.ycy.baselibrary.presenter.BasePresenter
 import com.ycy.baselibrary.presenter.view.BaseView
-import org.jetbrains.anko.toast
+import org.jetbrains.anko.support.v4.toast
 import javax.inject.Inject
 
 abstract class BaseMVPFragment<T : BasePresenter<*>> : BaseFragment(), BaseView {
@@ -42,8 +42,8 @@ abstract class BaseMVPFragment<T : BasePresenter<*>> : BaseFragment(), BaseView 
     private fun initActivityInjection() {
         mActivityComponent = DaggerActivityComponent
                 .builder()
-                .appComponent((activity.application as BaseApplication).mAppComponent)
-                .activityModule(ActivityModule(activity))
+                .appComponent((activity!!.application as BaseApplication).mAppComponent)
+                .activityModule(ActivityModule(activity!!))
                 .lifecycleProviderModule(LifecycleProviderModule(this))
                 .build()
 
