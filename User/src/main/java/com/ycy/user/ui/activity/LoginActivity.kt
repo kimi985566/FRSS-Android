@@ -15,6 +15,7 @@ import kotlinx.android.synthetic.main.activity_login.*
 import org.jetbrains.anko.startActivity
 import org.jetbrains.anko.toast
 
+
 class LoginActivity : BaseMVPActivity<LoginPresenter>(), LoginView, View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,6 +38,8 @@ class LoginActivity : BaseMVPActivity<LoginPresenter>(), LoginView, View.OnClick
     //登陆回调
     override fun onLoginResult(result: UserInfo) {
         toast(getString(R.string.loginSuccess))
+        //UserPrefsUtils.putUserInfo(result)
+        finish()
     }
 
     override fun injectComponent() {

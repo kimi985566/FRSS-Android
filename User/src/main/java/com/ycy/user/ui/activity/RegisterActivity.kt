@@ -6,7 +6,7 @@ import com.ycy.baselibrary.common.AppManager
 import com.ycy.baselibrary.ext.enable
 import com.ycy.baselibrary.ext.onClick
 import com.ycy.baselibrary.ui.activity.BaseMVPActivity
-import com.ycy.baselibrary.utils.ColoredSnackbar
+import com.ycy.baselibrary.utils.ColoredSnackBar
 import com.ycy.user.R
 import com.ycy.user.injection.component.DaggerUserComponent
 import com.ycy.user.injection.module.UserModule
@@ -56,7 +56,7 @@ class RegisterActivity : BaseMVPActivity<RegisterPresenter>(), RegisterView, Vie
         when (v.id) {
             R.id.mRegisterBtn -> {
                 if (mPwdEt.text.toString() != mPwdConfirmEt.text.toString()) {
-                    ColoredSnackbar.alert(mRegisterRootView, "密码不一致").show()
+                    ColoredSnackBar.alert(mRegisterRootView, "密码不一致").show()
                     return@onClick
                 }
                 mPresenter.register(mMobileEt.text.toString(), mPwdEt.text.toString())

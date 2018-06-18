@@ -12,12 +12,12 @@ interface UserApi {
     /*
       用户注册
     */
-    @POST("unnamed/user/register")
+    @POST("data/user/register")
     fun register(@Body req: RegisterReq): Observable<BaseResp<String>>
 
     /*
         用户登陆
      */
-    @POST("unnamed/user/login")
+    @POST("data/user/login")
     fun login(@Body req: LoginReq): Observable<BaseResp<UserInfo>>
 }

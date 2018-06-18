@@ -1,5 +1,6 @@
 package com.kotlin.base.rx
 
+import android.util.Log
 import com.ycy.baselibrary.common.ResultCode
 import com.ycy.baselibrary.data.protocol.BaseResp
 import com.ycy.baselibrary.rx.BaseException

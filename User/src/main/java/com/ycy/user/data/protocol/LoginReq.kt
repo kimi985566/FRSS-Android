@@ -1,5 +1,5 @@
 package com.ycy.user.data.protocol
 
 data class LoginReq(
-        val mobile: String,
+        val id: String,
         val pwd: String)
