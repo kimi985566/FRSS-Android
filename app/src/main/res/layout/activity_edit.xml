@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchMatch"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        style="@style/MatchMatch.Vertical">
+
+        <include layout="@layout/layout_tool_bar"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/tools_edit"
+            style="@style/MatchWrap.Horizontal"
+            android:background="@color/colorPrimary"
+            android:scrollbars="none"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/mEditVp"
+            style="@style/MatchMatch">
+
+        </android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_floating_buttons"/>
+
+</android.support.design.widget.CoordinatorLayout>
+

@@ -21,7 +21,7 @@
         style="@style/WrapWrap"
         android:layout_gravity="bottom|center"
         android:layout_marginBottom="@dimen/common_margin"
-        android:elevation="@dimen/common_elevation"
+        android:elevation="@dimen/common_small_elevation"
         app:fabSize="normal"
         app:srcCompat="@drawable/icon_add"/>
 

@@ -12,4 +12,5 @@
         <attr name="labelText" format="string"/>
         <attr name="contentText" format="string"/>
     </declare-styleable>
+
 </resources>

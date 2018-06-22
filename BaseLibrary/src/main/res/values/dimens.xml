@@ -14,7 +14,10 @@
     <dimen name="common_padding_small">5dp</dimen>
     <dimen name="common_radius">8dp</dimen>
     <dimen name="common_border_size">1px</dimen>
-    <dimen name="common_elevation">4px</dimen>
+
+    <dimen name="common_small_elevation">4px</dimen>
+    <dimen name="common_middle_elevation">8px</dimen>
+    <dimen name="common_deep_elevation">12px</dimen>
 
     <dimen name="text_small_size">12sp</dimen>
     <dimen name="text_middle_size">14sp</dimen>

@@ -6,4 +6,6 @@
     <string name="action_search">Search</string>
     <string name="action_style">style</string>
     <string name="homePage">首页</string>
+    <string name="EditTitleHintWord">标题</string>
+    <string name="MarkDownEditorViewHintWord">正文</string>
 </resources>

@@ -8,7 +8,7 @@
     <com.ycy.baselibrary.widgets.HeaderBar
         android:id="@+id/mHeaderBar"
         style="@style/MatchWrap"
-        android:elevation="@dimen/common_elevation"
+        android:elevation="@dimen/common_small_elevation"
         app:rightText="@string/register"
         app:titleText="@string/login"
         />
@@ -46,7 +46,7 @@
     <Button
         android:id="@+id/mLoginBtn"
         style="@style/FullBtnStyle"
-        android:elevation="@dimen/common_elevation"
+        android:elevation="@dimen/common_small_elevation"
         android:text="@string/login"/>
 
 </LinearLayout>

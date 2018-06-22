@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchMatch.Vertical"
+    android:divider="@drawable/divider_simple"
+    android:showDividers="middle">
+
+    <EditText
+        android:id="@+id/mEditTitleTv"
+        style="@style/MatchWrap"
+        android:background="@null"
+        android:hint="@string/EditTitleHintWord"
+        android:padding="@dimen/common_padding"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <com.ycy.markdown.View.MarkDownEditorView
+        android:id="@+id/mMarkDownEditorView"
+        style="@style/MatchMatch"
+        android:background="@null"
+        android:gravity="top|start"
+        android:hint="@string/MarkDownEditorViewHintWord"
+        android:padding="@dimen/common_padding"/>
+
+</LinearLayout>

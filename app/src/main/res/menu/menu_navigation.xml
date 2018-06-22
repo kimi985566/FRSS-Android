@@ -8,11 +8,7 @@
         android:icon="@drawable/icon_home"
         android:orderInCategory="0"
         android:title="@string/homePage"/>
-    <item
-        android:id="@+id/mNavMenuEditPage"
-        android:icon="@drawable/icon_content"
-        android:orderInCategory="1"
-        android:title="编辑页面"/>
+
     <item
         android:id="@+id/mNavMenuAboutPage"
         android:icon="@drawable/icon_me"

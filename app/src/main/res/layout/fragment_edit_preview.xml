@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchMatch.Vertical"
+    android:divider="@drawable/divider_simple"
+    android:showDividers="middle">
+
+    <TextView
+        android:id="@+id/mEditTitlePreviewTv"
+        style="@style/MatchWrap"
+        android:padding="@dimen/common_padding"
+        android:background="@null"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <com.ycy.markdown.View.MarkDownPreviewView
+        android:id="@+id/mMarkDownPreviewView"
+        style="@style/MatchMatch"
+        android:background="@null"
+        android:padding="@dimen/common_padding"/>
+
+</LinearLayout>

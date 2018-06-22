@@ -8,7 +8,6 @@ import android.support.v7.app.ActionBarDrawerToggle
 import android.view.MenuItem
 import com.ycy.baselibrary.ui.activity.BaseActivity
 import com.ycy.frss.R
-import com.ycy.frss.ui.fragment.EditFragment
 import com.ycy.frss.ui.fragment.HomeFragment
 import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.toast
@@ -20,8 +19,6 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
         private val mStack = Stack<Fragment>()
         //主界面Fragment
         private val mHomeFragment by lazy { HomeFragment() }
-        //编辑界面
-        private val mEditFragment by lazy { EditFragment() }
 
         private lateinit var drawerToggle: ActionBarDrawerToggle
     }
@@ -39,11 +36,9 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
     private fun initFragments() {
         val manager = supportFragmentManager.beginTransaction()
         manager.add(R.id.mHomeContainer, mHomeFragment)
-        manager.add(R.id.mHomeContainer, mEditFragment)
         manager.commit()
 
         mStack.add(mHomeFragment)
-        mStack.add(mEditFragment)
     }
 
     //设置ToolBar
@@ -85,9 +80,6 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.mNavMenuHomePage -> {
-                changeFragment(item.order)
-            }
-            R.id.mNavMenuEditPage -> {
                 changeFragment(item.order)
             }
             R.id.mNavMenuAboutPage -> {
