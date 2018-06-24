@@ -32,5 +32,4 @@ class HomeFragment : BaseFragment() {
             startActivity<EditActivity>()
         }
     }
-
 }
