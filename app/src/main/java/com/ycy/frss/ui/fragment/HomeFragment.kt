@@ -29,9 +29,7 @@ class HomeFragment : BaseFragment() {
 
     private fun initView() {
         mHomeFAB.onClick {
-
             startActivity<EditActivity>()
-
         }
     }
 
